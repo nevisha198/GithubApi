@@ -1,0 +1,118 @@
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px gray solid;
+}
+.header {
+    height: 30%;
+    background: gray;
+    color: white;
+    text-align: center;
+}
+.container {
+    padding: 2px 16px;
+    
+}
+.card-container {
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #000000;
+	padding-top: 30px;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+}
+.card-container .round {
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+	padding: 7px;
+    height: 100px;
+    width: 100px;
+}
+
+.scroll {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.cards{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.card-body{
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-flush {
+    border-radius: 0;
+}
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+}
+.card-title {
+    margin-bottom: 0.5rem;
+}
+.card-text{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color : black;
+    font-weight : 10px;
+}
+.back-button{
+    border:none;
+    color:#707070;
+    font-size:15px;
+    border-radius:4px;
+    outline:none;
+    float: right;
+    padding: 10px 20px;
+    margin:5px;
+}
+.back-button:hover{
+    border: 1px solid #c8c8c8;
+    padding: 9px 19px;
+    color:#FFFFFF;
+    cursor: pointer;
+    background-color: #4885ed !important;
+  }
+  .back-button:focus{
+    border:1px solid #4885ed;
+    padding: 9px 19px;
+    color:#FFFFFF;
+    background-color: #4885ed !important;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
