@@ -103,16 +103,10 @@
     color:#FFFFFF;
     cursor: pointer;
     background-color: #4885ed !important;
-  }
-  .back-button:focus{
+}
+.back-button:focus{
     border:1px solid #4885ed;
     padding: 9px 19px;
     color:#FFFFFF;
     background-color: #4885ed !important;
-  }
-
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
+}

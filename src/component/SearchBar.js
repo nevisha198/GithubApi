@@ -20,11 +20,9 @@ const SearchBar = () => {
       };
       axios(config)
       .then(response=>{
-          console.log(response)
           if(response.status === 200){
             navigate('/userprofile', {state : response.data})
           }else{
-            console.log("innn")
             toast("Not Found!");
           } 
       })
@@ -55,11 +53,11 @@ const SearchBar = () => {
         </div>
         <div className="bar">
           <input className="searchbar"
-              type="text" 
-              title="Search" 
-              placeholder="Search Username" 
-              value={inputData}  
-              onChange={(e)=>setInputData(e.target.value)}
+            type="text" 
+            title="Search" 
+            placeholder="Search Username" 
+            value={inputData}  
+            onChange={(e)=>setInputData(e.target.value)}
           />
         </div>
         <div className="buttons">

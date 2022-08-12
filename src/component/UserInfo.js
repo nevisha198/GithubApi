@@ -48,15 +48,13 @@ const UserInfo = () =>{
         </div>
       <div className="cards scroll">
       <ul class="list-group list-group-flush">
-           {repoList.map((item)=>(
-            
+           {repoList.map((item)=>(  
             <li  class="list-group-item">
               <div className="card-body">
               <h4 class="card-title">Repository Name : {item.name}</h4>
               <p class="card-text">Description : {item.description}</p>
-
               </div>
-              </li>
+            </li>
            ))}
         </ul>
       </div>
