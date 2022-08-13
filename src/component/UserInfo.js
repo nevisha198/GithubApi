@@ -47,12 +47,12 @@ const UserInfo = () =>{
           <h4>Total Repository : {public_repos}</h4>
         </div>
       <div className="cards scroll">
-      <ul class="list-group list-group-flush">
-           {repoList.map((item)=>(  
-            <li  class="list-group-item">
+      <ul className="list-group list-group-flush">
+           {repoList.map((item,i)=>(  
+            <li  className="list-group-item" key={i}>
               <div className="card-body">
-              <h4 class="card-title">Repository Name : {item.name}</h4>
-              <p class="card-text">Description : {item.description}</p>
+              <h4 className="card-title">Repository Name : {item.name}</h4>
+              <p className="card-text">Description : {item.description}</p>
               </div>
             </li>
            ))}
