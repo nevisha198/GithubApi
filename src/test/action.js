@@ -1,16 +1,12 @@
-const searchUser = (input) => {
-        if(validateData(input)){
-            if(input == "nevisha198"){
-                return true;
-            }else{
-                return false;
-            }
-        }else{
-            return false;
-        }
+const axios = require('axios')
+
+module.exports.searchUser = async (input) => {
+    const url = `https://api.github.com/users/${input}`;
+
+      return await axios.get(url) 
   }
 
-const validateData = (input) => {
+module.exports.validateData = (input) => {
     if(input === ""){
       return false;
     }else{
@@ -18,4 +14,5 @@ const validateData = (input) => {
     } 
 }
 
-module.exports = searchUser;
+
+ 
